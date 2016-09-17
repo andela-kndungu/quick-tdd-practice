@@ -1,7 +1,16 @@
 {
   "extends": "airbnb",
   "rules": {
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.spec.js"] 
+      }
+    ]
+  },
+  "env": {
+    "mocha": true
   }
 }
 
