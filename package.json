@@ -7,7 +7,7 @@
     "compile": "babel server --out-dir compiled",
     "serve": "node compiled/index.js",
     "start": "nodemon",
-    "test": "mocha --compilers js:babel-core/register"
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -41,6 +41,7 @@
     "eslint-plugin-react": "^6.2.2",
     "mocha": "^3.0.2",
     "nodemon": "^1.10.2",
-    "should": "^11.1.0"
+    "should": "^11.1.0",
+    "supertest": "^2.0.0"
   }
 }
